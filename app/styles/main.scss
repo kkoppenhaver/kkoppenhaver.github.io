@@ -193,18 +193,9 @@ h1 {
     margin: 0 0 23px 0;
 }
 
-h2 {
-    font-family: 'Droid Serif', serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 20px;
-    line-height: 23px;
-    margin: 0 0 23px 0;
-}
-
 p, .mdl-layout__tab-ripple-container {
     font-family: 'Droid Serif', serif;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 23px;
     margin: 0 0 23px 0;
 }
@@ -236,5 +227,14 @@ p, .mdl-layout__tab-ripple-container {
   .mdl-layout__tab-bar {
     margin: 0 auto;
     max-width: 860px;
+  }
+
+  .mdl-grid {
+    padding-top: 40px;
+
+    h1 {
+      margin-bottom: 40px;
+      text-align: center;
+    }
   }
 }
