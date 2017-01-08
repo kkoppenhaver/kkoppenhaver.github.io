@@ -55,8 +55,8 @@ html, body {
   line-height: 64px;
 }
 .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab.is-active::after {
-  background-color: white;
-  height: 4px;
+  background-color: black;
+  height: 3px;
 }
 .mdl-demo main > .mdl-layout__tab-panel {
   padding: 8px;
@@ -180,34 +180,61 @@ html, body {
 .mdl-demo .mdl-card .mdl-card__supporting-text > h3:first-child {
   margin-bottom: 24px;
 }
-.mdl-demo .mdl-layout__tab-panel:not(#overview) {
-  background-color: white;
-}
-.mdl-demo #features section {
-  margin-bottom: 72px;
-}
-.mdl-demo #features h4, #features h5 {
-  margin-bottom: 16px;
-}
-.mdl-demo .toc {
-  border-left: 4px solid #C1EEF4;
-  margin: 24px;
-  padding: 0;
-  padding-left: 8px;
-  display: flex;
-  flex-direction: column;
-}
-.mdl-demo .toc h4 {
-  font-size: 0.9rem;
-  margin-top: 0;
-}
-.mdl-demo .toc a {
-  color: #4DD0E1;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 28px;
-  display: block;
-}
 .mdl-demo .mdl-menu__container {
   z-index: 99;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    line-height: 51px;
+    font-size: 46px;
+    text-transform: uppercase;
+    margin: 0 0 23px 0;
+}
+
+h2 {
+    font-family: 'Droid Serif', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+}
+
+p, .mdl-layout__tab-ripple-container {
+    font-family: 'Droid Serif', serif;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+}
+
+.mdl-demo {
+  .mdl-layout__tab-bar, .mdl-layout__header {
+    background-color: transparent !important;
+  }
+
+  .mdl-layout__tab, .mdl-layout__tab.is-active {
+    color: black !important;
+    font-weight: 16px;
+
+    &:after {
+      -webkit-animation: none !important;
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+
+  .mdl-layout__tab {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0 auto;
+  }
+
+  .mdl-layout__tab-bar {
+    margin: 0 auto;
+    max-width: 860px;
+  }
 }
