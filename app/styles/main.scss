@@ -247,3 +247,15 @@ p, .mdl-layout__tab-ripple-container {
     width: 200px;
   }
 }
+
+.contact {
+  text-align: center;
+}
+
+a {
+  color: #616161;
+
+  &:hover {
+    color: lighten(#616161, 20%);
+  }
+}
