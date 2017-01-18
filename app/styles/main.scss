@@ -254,8 +254,16 @@ p, .mdl-layout__tab-ripple-container {
 
 a {
   color: #616161;
+  cursor: pointer;
 
   &:hover {
     color: lighten(#616161, 20%);
+  }
+}
+
+#overview {
+  p {
+    line-height: 30px;
+    text-align: center;
   }
 }
