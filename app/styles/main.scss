@@ -261,9 +261,74 @@ a {
   }
 }
 
-#overview {
+#overview, #speaking {
+  letter-spacing: 0px;
+
   p {
     line-height: 30px;
     text-align: center;
+  }
+}
+
+#speaking, #projects, #consulting, #contact {
+  h1 {
+    letter-spacing: 1px;
+  }
+}
+
+#speaking {
+  h2 {
+    font-family: 'Oswald';
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  .talks {
+    margin-top: 50px;
+  }
+
+  .talk{
+    img {
+      max-width: 50%;
+    }
+
+    .links {
+      font-size: 16px;
+      margin-bottom: 0px;
+    }
+
+    .text {
+      box-sizing: border-box;
+      max-width: 50%;
+      padding-left: 20px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 25px;  
+      text-align: left;
+    }
+
+    &.left {
+      img {
+        float: left;
+      }
+
+      .text {
+        float: right;
+      }
+    }
+
+    &.right {
+      img {
+        float: right;
+      }
+
+      .text {
+        float: left;
+      }
+    }
   }
 }
