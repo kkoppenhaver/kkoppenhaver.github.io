@@ -290,6 +290,9 @@ a {
   }
 
   .talk{
+    float: left;
+    margin-bottom: 100px;
+
     img {
       max-width: 50%;
     }
@@ -302,7 +305,6 @@ a {
     .text {
       box-sizing: border-box;
       max-width: 50%;
-      padding-left: 20px;
     }
 
     p {
@@ -318,6 +320,7 @@ a {
 
       .text {
         float: right;
+        padding-left: 20px;
       }
     }
 
@@ -328,6 +331,7 @@ a {
 
       .text {
         float: left;
+        padding-right: 20px;
       }
     }
   }
