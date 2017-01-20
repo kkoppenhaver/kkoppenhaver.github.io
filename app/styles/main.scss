@@ -293,8 +293,16 @@ a {
     float: left;
     margin-bottom: 100px;
 
+    @media screen and (max-width: 768px) {
+      margin-bottom: 50px;
+    }
+
     img {
       max-width: 50%;
+
+      @media screen and (max-width: 768px) {
+        max-width: 100%;
+      }
     }
 
     .links {
@@ -305,6 +313,12 @@ a {
     .text {
       box-sizing: border-box;
       max-width: 50%;
+
+      @media screen and (max-width: 768px) {
+        max-width: 100%;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
     }
 
     p {
