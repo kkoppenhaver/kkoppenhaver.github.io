@@ -72,29 +72,27 @@
     });
   }
 
-  document.addEventListener("DOMContentLoaded", function(event) { 
-    var current_url = window.location.href;
+  var current_url = window.location.href;
 
-    if( current_url.includes( '#' ) ) {
-      var current_url = current_url.split('#');
-      var link_class = current_url[1];
+  if( current_url.includes( '#' ) ) {
+    var current_url = current_url.split('#');
+    var link_class = current_url[1];
 
-      var nav_items = document.getElementsByClassName('mdl-layout__tab');
+    var nav_items = document.getElementsByClassName('mdl-layout__tab');
 
-      for (var i = 0; i < nav_items.length; i++) {
-        nav_items[i].classList.remove('is-active');
-      }
-
-      document.getElementsByClassName(link_class)[0].classList.add('is-active');
-
-      var panels = document.getElementsByClassName('mdl-layout__tab-panel');
-
-      for (var i = 0; i < panels.length; i++) {
-        panels[i].classList.remove('is-active');
-      }
-
-      document.getElementById(link_class).classList.add('is-active');
+    for (var i = 0; i < nav_items.length; i++) {
+      nav_items[i].classList.remove('is-active');
     }
-  });
 
+    document.getElementsByClassName(link_class)[0].classList.add('is-active');
+
+    var panels = document.getElementsByClassName('mdl-layout__tab-panel');
+
+    for (var i = 0; i < panels.length; i++) {
+      panels[i].classList.remove('is-active');
+    }
+
+    document.getElementById(link_class).classList.add('is-active');
+
+  }
 })();
