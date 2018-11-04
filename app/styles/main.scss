@@ -299,6 +299,44 @@ h3 {
     margin-top: 50px;
   }
 
+  .talks.all {
+    .talk {
+      box-sizing: border-box;
+      display: inline-block;
+      float: left;
+      margin-bottom: 50px;
+      width: 50%;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+
+      &:nth-child(odd) {
+        padding-right: 20px;
+
+        @media screen and (max-width: 768px) {
+          padding-right: 0px;
+        }
+      }
+
+      &:nth-child(even) {
+        padding-left: 20px;
+
+        @media screen and (max-width: 768px) {
+          padding-left: 0px;
+        }
+      }
+
+      &:nth-child(2n+1) {
+        clear: both;
+      }
+
+      .text {
+        max-width: 100%;
+      }
+    }
+  }
+
   .talk{
     float: left;
     margin-bottom: 100px;
