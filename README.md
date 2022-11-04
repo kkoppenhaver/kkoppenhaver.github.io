@@ -1,1 +1,1 @@
-# kkoppenhaver.github.io
+# Content Writer (GitHub) Take Home Exercises
